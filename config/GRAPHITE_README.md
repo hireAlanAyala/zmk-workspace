@@ -2,7 +2,9 @@
 
 This configuration implements the **Graphite keyboard layout** for a 3x5 split keyboard (Corne-style).
 
-![Graphite Keymap](../draw/graphite.svg)
+([Click here](https://raw.githubusercontent.com/hireAlanAyala/zmk-workspace/refs/heads/main/draw/graphite.svg)
+for the visual keymap - powered by
+[keymap-drawer](https://github.com/caksoylar/keymap-drawer).)
 
 ## About Graphite
 
