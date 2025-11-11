@@ -1,0 +1,16 @@
+#define CONFIG_WIRELESS
+
+// Redefine thumb layout to use only middle 4 keys (skip outer keys at positions 30 and 35)
+#define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
+    ZMK_LAYER(                                                                 \
+        name,                                                                  \
+                 LT RT                                                         \
+                 LM RM                                                         \
+                 LB RB                                                         \
+        &none LH RH &none                                                      \
+    )
+
+#include "zmk-helpers/key-labels/36.h"
+#include "graphite_base.keymap"
+
+/{ chosen { zmk,physical-layout = &foostan_corne_5col_layout; }; };
