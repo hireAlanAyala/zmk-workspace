@@ -34,10 +34,10 @@ parse_config:
     "&magic_shift": { "t": Magic, "h": "Shift" }
     "&smart_mouse": Smart Mouse
 
-    "&sqt_morph": { "t": "'", "s": "_" }
-    "&dot_morph": { "t": ".", "s": ">" }
-    "&comma_morph": { "t": ",", "s": '"' }
-    "&slash_morph": { "t": "/", "s": "<" }
+    "&sqt_morph": { "t": "'", "s": "!" }
+    "&dot_morph": { "t": ".", "s": ":" }
+    "&comma_morph": { "t": ",", "s": ";" }
+    "&slash_morph": { "t": "/", "s": "?" }
 
     "&hm_combo_ldr": Leader
     "&hm_combo_ldrsh": Shift+Leader

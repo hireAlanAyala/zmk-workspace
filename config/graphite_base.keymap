@@ -147,17 +147,21 @@ ZMK_TRI_STATE(swapper, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
                 bindings = <BINDING1>, <BINDING2>;)
 
 // Graphite shift layer morphs
-// Tap: comma | Shift + tap: double-quote.
-SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &kp DQT)
+// Tap: comma | Shift: semicolon | Ctrl+Shift: double-quote.
+SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
+SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp DQT)
 
-// Tap: dot | Shift + tap: greater-than.
-SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp GT)
+// Tap: dot | Shift: colon | Ctrl+Shift: greater-than.
+SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
+SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GT)
 
-// Tap: slash | Shift + tap: less-than.
-SIMPLE_MORPH(slash_morph, SFT, &kp SLASH, &kp LT)
+// Tap: slash | Shift: question mark | Ctrl+Shift: less-than.
+SIMPLE_MORPH(slash_morph, SFT, &kp SLASH, &slash_inner_morph)
+SIMPLE_MORPH(slash_inner_morph, CTL, &kp QMARK, &kp LT)
 
-// Tap: apostrophe | Shift + tap: underscore.
-SIMPLE_MORPH(sqt_morph, SFT, &kp SQT, &kp UNDER)
+// Tap: apostrophe | Shift: exclamation | Ctrl+Shift: underscore.
+SIMPLE_MORPH(sqt_morph, SFT, &kp SQT, &sqt_inner_morph)
+SIMPLE_MORPH(sqt_inner_morph, CTL, &kp EXCL, &kp UNDER)
 
 // Tap: left/right parenthesis | Shft + tap: less-than/greater-than.
 SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)

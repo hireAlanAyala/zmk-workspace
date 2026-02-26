@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: graphite_base}
+layout: {zmk_keyboard: graphite_base, layout_name: LAYOUT}
 layers:
   Base:
     - B
@@ -6,7 +6,7 @@ layers:
     - D
     - W
     - Z
-    - {t: '''', s: _}
+    - {t: '''', s: '!'}
     - F
     - O
     - U
@@ -28,9 +28,9 @@ layers:
     - V
     - K
     - P
-    - {t: ., s: '>'}
-    - {t: ',', s: '"'}
-    - {t: /, s: <}
+    - {t: ., s: ':'}
+    - {t: ',', s: ;}
+    - {t: /, s: '?'}
     - {t: Spc, h: Nav, s: Sentence}
     - {t: Enter, h: Fn}
     - {t: Numword, h: Num, s: Sticky Num}
